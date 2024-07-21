@@ -1,0 +1,235 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('background4.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white; /* Warna teks putih untuk seluruh body */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Mengisi setidaknya tinggi halaman sama dengan tinggi layar */
+}
+
+.header {
+    background-color: rgba(51, 51, 51, 0.0); /* Header background transparent */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-item {
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Border transparan */
+    border-radius: 15px; /* Radius untuk border */
+    padding: 5px 10px; /* Padding untuk teks */
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: white; /* Warna teks putih untuk logo */
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    width: 300px;
+    margin: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 13px;
+    box-sizing: border-box;
+    background-color: rgba(10, 5, 5, 0.8); /* Background transparan */
+}
+
+.table-container {
+    max-height: 700px; /* Adjust height based on 10 rows */
+    overflow-y: auto;
+}
+
+.province-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.province-table th,
+.province-table td {
+    border: 1px solid #fbfafa;
+    padding: 10px;
+}
+
+.province-table th {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.province-table a {
+    text-decoration: none;
+    color: #f7f8fa;
+}
+
+.province-table a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    flex: 1; /* Mengisi ruang yang tersisa di antara header dan footer */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 16px;
+}
+
+.destinations {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.destination {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.destination h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.destination p {
+    font-size: 16px;
+    color: #666;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    width: 200%; /* Lebar gambar memenuhi container */
+    height: auto; /* Tinggi menyesuaikan proporsi gambar */
+    display: block;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-align: left;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Hitam transparan */
+    padding: 20px;
+    text-align: center;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.address,
+.social-media {
+    margin: 10px 0;
+}
+#contact {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.social-media .contact-foot {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-logo {
+    width: 40px; /* Set a uniform width */
+    height: 40px; /* Set a uniform height */
+    border-radius: 50%; /* Make the edges rounded */
+    background-color: white; /* Add background color to make transparency visible */
+    padding: 5px; /* Add padding to ensure visibility */
+    box-sizing: border-box; /* Ensure padding does not affect the size */
+}
+.gmail {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .social-media {
+        text-align: center;
+    }
+
+    .contact-foot {
+        justify-content: center;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
